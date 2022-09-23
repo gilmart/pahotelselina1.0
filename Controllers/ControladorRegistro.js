@@ -1,8 +1,8 @@
-export class ControladorHabitacion{
+export class ControladorRegistro{
 
     constructor(){}
 
-    buscarHabitaciones(request, response){
+    buscarRegistro(request, response){
         
         try{
             response.status(200).json({
@@ -18,7 +18,7 @@ export class ControladorHabitacion{
         }      
     }
 
-    buscarHabitacionPorID(request, response){
+    buscarRegistroPorID(request, response){
         try{
             response.status(200).json({
                 "mensaje":"exito en la consulta",
@@ -33,7 +33,7 @@ export class ControladorHabitacion{
         }      
     }
 
-    registrarHabitacion(request, response){
+    realizarrRegistro(request, response){
         try{
             response.status(200).json({
                 "mensaje":"exito registrando la habitacion",
@@ -49,7 +49,7 @@ export class ControladorHabitacion{
 
     }
 
-    editarHabitacion(request, response){
+    editarRegistro(request, response){
         try{
             response.status(200).json({
                 "mensaje":"exito editando la habitacion",
